@@ -12,8 +12,8 @@ using Printf;
 include("$(pwd())/_helpers/helpers.jl");
 
 pkgmeta = getpkgmeta("DataFrames");
-ver = pkgmeta["version"];
-git = pkgmeta["git-tree-sha1"];
+ver = pkgmeta.version;
+git = pkgmeta.tree_hash;
 task = "join";
 solution = "juliadf";
 fun = "join";
